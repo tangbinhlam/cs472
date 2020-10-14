@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>CS472 - BINH LAM TANG</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Create a column layout with Flexbox */
+    .row {
+      display: flex;
+    }
+
+    /* Left column (menu) */
+    .left {
+      flex: 10%;
+    }
+
+    /* Right column (page content) */
+    .right {
+      flex: 90%;
+    }
+
+    /* Style the navigation menu inside the left column */
+    #myMenu {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #myMenu li a {
+      text-decoration: none;
+      color: blue;
+      display: block;
+      padding-bottom: 5px;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+
+    #myMenu li a:hover {
+      color: #c3251d;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+<div class="main-container">
+
+  <header>
+    <img src="images/avatar.jpg" width="250" height="250" style="border-radius: 50%; margin: 25px 25px 25px 30px" />
+  </header>
+
+  <section style="padding-left: 20px">
+    <h1>Binh Lam, Tang - 610771</h1>
+    <h2>Course CS472 - Web Application Programming</h2>
+    <div class="row">
+      <div class="left">
+        <h3>Labs</h3>
+        <ul id="myMenu">
+          <li><a href="labs/lab1/lab1.html">Lab 1</a></li>
+          <li><a href="labs/lab2/lab2.html">Lab 2</a></li>
+          <li><a href="labs/lab3/lab3.html">Lab 3</a></li>
+          <li><a href="labs/lab4/lab4.html">Lab 4</a></li>
+          <li><a href="labs/lab5/lab5.html">Lab 5</a></li>
+          <li><a href="labs/lab6/lab6.html">Lab 6</a></li>
+          <li><a href="labs/lab7/lab7.html">Lab 7</a></li>
+          <li><a href="labs/lab8/lab8.html">Lab 8</a></li>
+          <li><a href="labs/lab9/lab9.html">Lab 9</a></li>
+          <li><a href="labs/lab10/lab10.html">Lab 10</a></li>
+          <li><a href="labs/lab11/lab11.html">Lab 11</a></li>
+          <li><a href="labs/lab12/lab12.html">Lab 12</a></li>
+          <li><a href="labs/lab13/lab13.html">Lab 13</a></li>
+          <li><a href="labs/lab14/lab14.html">Lab 14</a></li>
+          <li><a href="labs/lab15/lab15.html">Lab 15</a></li>
+          <li><a href="labs/lab16/lab16.html">Lab 16</a></li>
+        </ul>
+      </div>
+      <div class="right"></div>
+    </div>
+
+  </section>
+
+  <footer>
+    <div class="siteInfo">
+      <strong>&copy; Binh Lam Tang</strong>
+      <br />Maharishi University of Management
+      <br />Address: 1000 N 4th St., Fairfield, Iowa, 52557
+      <br />Email: <a href="mailto:btang@miu.edu" title="email: btang@miu.edu">btang@miu.edu</a>
+    </div>
+
+    <div class="w3cValidator">
+      <a href="https://validator.w3.org/check/referer">
+        <img src="http://mumstudents.org/cs472/2013-09/images/w3c-html.png" alt="html validator"/>
+      </a>
+      <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img src="http://mumstudents.org/cs472/2013-09/images/w3c-css.png" alt="css validator"/>
+      </a>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>

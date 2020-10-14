@@ -1,0 +1,82 @@
+/* Keep footer at bottom */
+* {
+	box-sizing: border-box;
+}
+
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	position: relative;
+}
+
+.main-container {
+	min-height: 100vh;
+	overflow: hidden;
+	display: block;
+	position: relative;
+	padding-bottom: 100px;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+  padding: 25px;
+}
+
+/* end of keep footer at bottom */
+body {
+	background: #aec1b1;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: #333;
+}
+
+header {
+  height: 275px;
+}
+
+.text-center {
+	text-align: center;
+}
+
+footer, header {
+  background-image: url(../images/footer.jpg);
+}
+
+
+
+header p, footer p {
+	padding: 24px;
+	margin: 0;
+}
+
+h1, h2 , h3{
+  color: #7a867c;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+h1, h2 {
+  text-transform: uppercase;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  color: darkcyan;
+}
+
+.w3cValidator {
+  float: right;
+}
+.siteInfo {
+  color: var(--dark-green);
+  float: left;
+}
