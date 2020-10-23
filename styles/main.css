@@ -94,3 +94,43 @@ h3 {
 #moodSection ul li img {
     width: 100px;
 }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Create a column layout with Flexbox */
+    .row {
+      display: flex;
+    }
+
+    /* Left column (menu) */
+    .left {
+      flex: 10%;
+    }
+
+    /* Right column (page content) */
+    .right {
+      flex: 90%;
+    }
+
+    /* Style the navigation menu inside the left column */
+    #myMenu {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #myMenu li a {
+      text-decoration: none;
+      color: blue;
+      display: block;
+      padding-bottom: 5px;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+
+    #myMenu li a:hover {
+      color: #c3251d;
+      text-decoration: underline;
+    }

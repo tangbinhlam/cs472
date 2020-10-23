@@ -1,0 +1,161 @@
+/* Stylesheet for recipel*/
+body.recipel {
+    font-size: 11pt;
+    background-image: url("../images/recipel/silverware.jpg");
+    font-family: "Georgia", "Garamond", sans-serif;
+}
+
+a {
+    color: #A4A400;
+}
+
+.recipel > .header {
+    padding: 0px 10px;
+}
+
+.recipel > .header > img#avatar {
+    margin-top: 5px;
+    padding: 0px 10px;
+    border: 1px solid #3C1C27;
+}
+
+.recipel > .header > .titleWrapper {
+    text-align: center;
+}
+
+.recipel > .header > .titleWrapper > h1.pageTitle {
+    text-decoration: underline;
+    color: #A4A400;
+    text-align: center;
+    background-color: #F0F0F0;
+    padding: 5px 10px;
+
+    font-family: "Lucida Sans Unicode", "Helvetica", "Arial", sans-serif;
+    font-size: 22pt;
+    width: fit-content;
+    margin: auto auto 15px auto ;
+    letter-spacing: 7px;
+}
+
+.recipel > .header > .item-list {
+    list-style-type: none;
+    line-height: 1.5;
+    padding: 0px;
+    margin-top: 10px;
+}
+
+.recipel > .content {
+    padding: 0px 10px;
+}
+
+.recipel > .content > .section {
+    border-top: 1px solid #ddd;
+}
+
+.recipel > .content > .section > h2 {
+    color: #A4A400;
+    text-transform: uppercase;
+    text-decoration: underline;
+    background-color: #F0F0F0;
+    font-family: "Lucida Sans Unicode", "Helvetica", "Arial", sans-serif;
+    font-size: 18pt;
+}
+
+.recipel > .content > .section > #userComments, #links {
+    list-style-type: none;
+}
+
+.recipel > .content > .section > #ingredients {
+    list-style-image: url(../images/recipel/pie_icon.gif);
+}
+
+.recipel > .content > .section > #ingredients, #directions, #links {
+    line-height: 1.5;
+}
+
+.recipel > .content > .section > #ingredients, #directions ul {
+    list-style-image: url(../images/recipel/pie_icon.gif);
+}
+
+.recipel > .content > .section > #links {
+    padding: 0px;
+    margin: 0px;
+}
+
+.recipel > .content > .section > ul li a {
+    text-decoration: none;
+}
+
+.recipel > .content > .section > ul li a:hover {
+    text-decoration: underline;
+}
+
+.recipel > .content > .section > #userComments li {
+    font-style: italic;
+    background-color: rgb(255, 242, 169);
+    display: block;
+}
+
+.lineThrough{
+    text-decoration: line-through;
+}
+.recipel > .footer > .siteInfo {
+    text-align: right;
+}
+
+.recipel > .footer > .siteInfo > ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.recipel > .footer > .siteInfo > ul > li {
+    font-family: "monospace", sans-serif;
+}
+
+.recipel > .footer > .siteInfo > ul > li::after {
+    content: "|";
+    position:fixed;
+    right:0;
+}
+
+.recipel > .footer .w3cValidator {
+    padding-right: 0px;
+    text-align: right;
+}
+
+.recipel > .footer .w3cValidator a {
+    text-decoration: none;
+}
+
+pre {
+    display: block;
+    font-family: monospace;
+    white-space: pre;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px solid black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
