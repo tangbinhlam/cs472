@@ -80,3 +80,17 @@ h3 {
   color: var(--dark-green);
   float: left;
 }
+
+#moodSection ul {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+#moodSection li {
+    float: left;
+    padding-right: 10px;
+}
+
+#moodSection ul li img {
+    width: 100px;
+}

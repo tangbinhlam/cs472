@@ -1,10 +1,136 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+  <meta charset="utf-8">
+  <title>CS472 - BINH LAM TANG</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/normalize.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    /* Create a column layout with Flexbox */
+    .row {
+      display: flex;
+    }
+
+    /* Left column (menu) */
+    .left {
+      flex: 10%;
+    }
+
+    /* Right column (page content) */
+    .right {
+      flex: 90%;
+    }
+
+    /* Style the navigation menu inside the left column */
+    #myMenu {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #myMenu li a {
+      text-decoration: none;
+      color: blue;
+      display: block;
+      padding-bottom: 5px;
+      font-weight: 300;
+      letter-spacing: 1px;
+    }
+
+    #myMenu li a:hover {
+      color: #c3251d;
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-  <h1>Wellcome Lab 2</h1>
+<div class="main-container">
+
+  <header>
+    <img src="/images/avatar.jpg" width="250" height="250" alt="Binh Lam, Tang" style="border-radius: 50%; margin: 25px 25px 25px 30px" />
+  </header>
+  <section style="padding-left: 20px">
+      <h1>Binh Lam, Tang - 610771</h1>
+      <h2>Course CS472 - Web Application Programming</h2>
+  </section>
+  <section style="padding-left: 20px">
+      <div id="aboutSection" class="section">
+        <p>
+            I have 14 years experienced in Software Development.
+            <br />5 years experienced with Angular.
+        </p>
+    </div>
+  </section>
+  <section style="padding-left: 20px">
+    <h3>My Courses</h3>
+      <ul>
+          <li>CS401 - Modern Programming Practices</li>
+          <li>CS544 - Enterprise Architecture</li>
+          <li>STC506B - STC Pt2 Leadership for Tech Managers</li>
+          <li>CS435	- Algorithms</li>
+          <li>CS572	- Modern Web Applications</li>
+          <li>CS545	- Web Application Architecture</li>
+          <li>CS522	- Big Data</li>
+          <li>MGT5341	- Career Strategies for Information Technology</li>
+          <li>DE - CS525	Advanced Software Development</li>
+          <li>DE - CS435 Web Application Programing - <em>current</em></li>
+      </ul>
+  </section>
+  <section style="padding-left: 20px">
+    <h3>My Favorite Movies</h3>
+      <em><span class="dropCap">(I</span> actually don't watch too many movies, so... here goes!)</em>
+        <ol>
+            <li>The Martian (2015) PG-13 | Adventure, Drama, Sci-Fi <a href="https://www.imdb.com/video/vi113423129?playlistId=tt3659388&ref_=tt_ov_vi" >(IMDB)</a></li>
+            <li>Life of Pi Life of Pi (2012) PG | Adventure, Drama, Fantasy<a href="https://www.imdb.com/video/vi2646320921?playlistId=tt0454876&ref_=tt_ov_vi" >(IMDB)</a></li>
+            <li>Gravity Gravity (2013) PG-13 | Drama, Sci-Fi, Thriller <a href="https://www.imdb.com/video/vi2340006169?playlistId=tt1454468&ref_=tt_ov_vi" >(IMDB)</a></li>
+        </ol>
+  </section>
+  <section style="padding-left: 20px">
+        <h3>My Hobbies</h3>
+        <ul>
+            <li>Photograper - 500px <a href="https://500px.com/p/osalam?view=photos" >(Link)</a></li>
+        </ul>
+  </section>
+  <section style="padding-left: 20px" id="moodSection">
+    <h3>My Moods</h3>
+        <ul>
+            <li>
+                <div>Happy</div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSc64S3U8a60qZt4rdRFTqR6paTuwKkMhNGWg&usqp=CAU" alt="Happy" />
+            </li>
+            <li>
+                <div>Said</div>
+                <img src="http://1.bp.blogspot.com/-Qx0-GLGXiD0/TsLfZ1Gw1LI/AAAAAAAAJDY/htO__FA74k8/s1600/bodie+cry+1663.jpg" alt="Sad" />
+            </li>
+        </ul>
+  </section>
+  <section>
+    <div class="siteInfo" style="margin-left: 25px; color: darkcyan;">
+      <strong>&copy; Binh Lam Tang</strong>
+      <br />Maharishi University of Management
+      <br />Address: 1000 N 4th St., Fairfield, Iowa, 52557
+      <br />Email: <a href="mailto:btang@miu.edu" title="email: btang@miu.edu">btang@miu.edu</a>
+    </div>
+
+    <div class="w3cValidator">
+      <a href="https://validator.w3.org/check/referer">
+        <img src="http://mumstudents.org/cs472/2013-09/images/w3c-html.png" alt="html validator"/>
+      </a>
+      <a href="https://jigsaw.w3.org/css-validator/check/referer">
+        <img src="http://mumstudents.org/cs472/2013-09/images/w3c-css.png" alt="css validator"/>
+      </a>
+    </div>
+  </section>
+
+</div>
+
 </body>
 </html>
