@@ -106,12 +106,12 @@ h3 {
 
     /* Left column (menu) */
     .left {
-      flex: 10%;
+      flex: 20%;
     }
 
     /* Right column (page content) */
     .right {
-      flex: 90%;
+      flex: 80%;
     }
 
     /* Style the navigation menu inside the left column */
@@ -133,4 +133,8 @@ h3 {
     #myMenu li a:hover {
       color: #c3251d;
       text-decoration: underline;
+    }
+
+    .sub-menu {
+      padding-left: 60px;
     }
