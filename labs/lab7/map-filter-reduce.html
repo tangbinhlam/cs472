@@ -3,39 +3,56 @@
   <header>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<title>ASCIImation</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/main.css">
   </header>
   <body>
+    <h1>Lab 7 - Map vs Filtr vs Reduce</h1>
     <div style="padding-left: 20px">
-    <a href="/index.html">Home</a>
-  </div>
-    <p>//function sum() that sums all the numbers in an array of numbers.</p>
-    function sum(arr) {
-      return arr.reduce((a,b) => a + b, 0);
-    }
+      <a href="/index.html">Home</a>
+    </div>
+    <pre>
+      <h4>
+        function sum() that sums all the numbers in an array of numbers.
+      </h4>
+      <code>
+        function sum(arr) {
+          return arr.reduce((a,b) => a + b, 0);
+        }
+      </code>
+    </pre>
 
-    <br>
-    <br>
-    //function multiply() that multiplies (respectively) all the numbers in an array of numbers.
-     <br>
-    function multiply (arr){
-        return arr.reduce((a,b) => a * b, 1);
-    }
+    <pre>
+      <h4>
+        function multiply() that multiplies (respectively) all the numbers in an array of numbers.
+      </h4>
+      <code>
+        function multiply (arr){
+          return arr.reduce((a,b) => a * b, 1);
+        }
+      </code>
+    </pre>
 
-    <br>
-    <br>
-    //function reverse() that computes the reversal of a string
-     <br>
-    function reverse(str) {
-        return [...str].reduce((prev,next)=>next+prev);
-    }
+    <pre>
+      <h4>
+        function reverse() that computes the reversal of a string
+      </h4>
+      <code>
+        function reverse(str) {
+          return [...str].reduce((prev,next)=>next+prev);
+        }
+      </code>
+    </pre>
 
-    <br>
-    <br>
-    //filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i
-     <br>
-    function filterLongWords(words, i) {
-        return words.filter(word => word.length >= i);
-    }
+    <pre>
+      <h4>
+        filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i
+      </h4>
+      <code>
+        function filterLongWords(words, i) {
+          return words.filter(word => word.length >= i);
+        }
+      </code>
+    </pre>
   </body>
 </html>
