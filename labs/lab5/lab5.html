@@ -2,9 +2,108 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Basic JavaScript</title>
+    <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
-  <h1>Wellcome Lab 5</h1>
+  <div style="padding-left: 20px">
+    <a href="/index.html">Home</a>
+  </div>
+  <pre>
+    <h4>1. Define a function max() that takes two numbers as arguments and returns the largest of them. Use the if-then-else construct available in Javascript.</h4>
+    <code>
+      function max(x, y) {
+        if (x > y) return x;
+        else return y;
+      }
+
+      // or
+      let max = (x, y) => x >y?x:y
+
+      // run
+      console.log(max(10,12)); // => result: 12
+    </code>
+  </pre>
+  <pre>
+    <h4>2. Define a function maxOfThree() that takes three numbers as arguments and returns the largest of them.</h4>
+    <code>
+      let maxOfThree = (x, y, z) => {
+        let max = x;
+        if(y> max) max = y;
+        if(z> max) max = z;
+        return max;
+      }
+      // run
+      console.log(maxOfThree(3, 5, 12)); // => result: 12
+    </code>
+  </pre>
+  <pre>
+    <h4>3. Write a function isVowel() that takes a character (i.e. a string of length 1) and returns true if it is a vowel, false otherwise.</h4>
+    <code>
+      function isVowel(char){
+        if (char.length === 1){
+          var vowels = "aeiou";
+          return vowels.indexOf(char) >= 0 ? true : false;
+        }
+        return false;
+      }
+      // run
+      console.log(isVowel('d')) // => false
+      console.log(isVowel('e')) // => true
+      console.log(isVowel('ae')) // => false
+    </code>
+  </pre>
+    <pre>
+    <h4>4. Define a function sum() and a function multiply() that sums and multiplies (respectively) all the numbers in an array of numbers. For example, sum([1,2,3,4]) should return 10, and multiply([1,2,3,4]) should return 24.</h4>
+    <code>
+      var sum = (array) => array.reduce( (x, y) => x + y);
+
+      var multiply = (array) => array.reduce( (x, y) => x * y);
+
+      // run
+      console.log(sum([1,2,3,4])) // Result = 4;
+      console.log(multiply([1,2,3,4])) // Result = 24;
+    </code>
+  </pre>
+    <pre>
+    <h4>5. Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".</h4>
+    <code>
+      let reverse = (s) => s.split("").reverse().join("");
+      // run
+      console.log(reverse("jag testar")) // Result = "ratset gaj";
+    </code>
+  </pre>
+    <pre>
+    <h4>6. Write a function findLongestWord() that takes an array of words and returns the length of the longest one.</h4>
+    <code>
+      var findLongestWord = (array) => array.reduce( (x, y) => y.length>x?y.length:x, 0);
+
+      // run
+      console.log(findLongestWord(['abc','abcd', '4asssss', 'aaa5'])); // => result = 7
+    </code>
+  </pre>
+  </pre>
+    <pre>
+    <h4>7. Write a function findLongestWord() that takes an array of words and returns the length of the longest one.</h4>
+    <code>
+      var filterLongWords = (array, length) => array.filter( (x) => x.length>length);
+
+      // run
+      console.log(filterLongWords(['abc','abcd', '4asssss', 'aaa5'],4)); // => result = ["4asssss"]    </code>
+  </pre>
+    </pre>
+  <pre>
+    <h4>8. Modify the jsfiddle on the map/filter/reduce slide as follows:</h4>
+    <code>
+      const a = [1,3,5,3,3];
+      const b = a.map(function(elem, i, array) {
+        return elem * 10;
+      })
+      console.log(b); // => [10, 30, 50, 30, 30]
+
+      const c = a.filter(function(elem, i, array){
+        return elem === 3;});
+      console.log(c); // [3, 3, 3]
+  </pre>
 </body>
 </html>
