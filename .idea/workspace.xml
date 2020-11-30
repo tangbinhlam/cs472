@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6a8db076-5c76-4ab2-a831-cf7b903d468a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="6a8db076-5c76-4ab2-a831-cf7b903d468a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,6 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1602633151014</updated>
       <workItem from="1602633152496" duration="7798000" />
+      <workItem from="1606159839483" duration="57000" />
     </task>
     <task id="LOCAL-00001" summary="[Lab1] Fix error missing alt in tag img">
       <created>1602646836396</created>
